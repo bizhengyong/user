@@ -18,6 +18,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserInfo findByOpenid(String openid) {
-        return null;
+        return repository.findByOpenid(openid);
     }
 }
